@@ -44,4 +44,4 @@ for player in team_white:
 
 print("\nTeam Black:")
 for player in team_black:
-    print(f"{player[0]:<15} {player[1]:.2f} strength (adjusted)")
+    print(f"{player[0]:<15} {player[1]:.2f}")
