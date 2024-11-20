@@ -1,6 +1,6 @@
 import random
 
-# List of 14 players and their corresponding strength (weight in kg or any other unit)
+# List of 14 players and their corresponding strength
 players = [
     ("Mario", 70), ("Monte", 80), ("Baraa", 75), ("Nabil", 85),
     ("Awad", 78), ("Safwat", 82), ("Ibrahim", 88), ("HamzeR", 74),
@@ -8,7 +8,7 @@ players = [
     ("Omar", 73), ("Mutaz", 76)
 ]
 
-# Sort players by their strength (descending order to balance stronger players first)
+# Sort players by their strength (in descending order to balance stronger players first)
 players.sort(key=lambda x: x[1], reverse=True)
 
 # Initialize two teams
@@ -40,7 +40,7 @@ for player in players:
 # Print the teams with adjusted strengths
 print("Team White:")
 for player in team_white:
-    print(f"{player[0]:<15} {player[1]:.2f} strength (adjusted)")
+    print(f"{player[0]:<15} {player[1]:.2f}")
 
 print("\nTeam Black:")
 for player in team_black:
